@@ -13,8 +13,8 @@
 
 .logo img {
     position: absolute;
-    width: 60px;
-    height: auto;
+    width: auto;
+    height: 65px;
     top: 10px;
 }
 
@@ -34,16 +34,27 @@
     z-index: -1;
 }
 
+
 .get-started {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: center;
+    gap: 60px;
+}
+
+.moni-wave {
+    display: none;
+}
+
+.moni-wave img {
+    height: 200px;
+    border-bottom: 2px solid #FFFFFF;
 }
 
 .intro-welcome {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .intro-welcome h1 {
@@ -62,12 +73,7 @@
 .intro-welcome p {
     font-size: 18px;
     color: #FFFFFF;
-    width: 70%;
     margin-bottom: 20px;
-}
-
-.intro-moni {
-    margin-right: 70px;
 }
 
 .get-started-btn {
@@ -85,11 +91,32 @@
 
 
 /* Tablet */
-/* @media (max-width: 992px) {
-    .welcome-container {
-        background-color: blue;
+@media (max-width: 900px) {
+    .get-started {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0;
     }
-} */
+
+    .moni-wave {
+        display: block;
+    }
+
+    .intro-welcome {
+        align-items: center;
+    }
+
+    .get-started-btn {
+    height: 40px;
+    width: 450px;
+    background-color: #00FFD1;
+    }
+
+    .moni-float {
+        display: none;
+    }
+}
 
 /* Mobile */
 @media (max-width: 576px) {
@@ -100,5 +127,24 @@
     background: url('/public/images/backgrounds/galaxy-mobile.png') center/cover no-repeat;
     opacity: 0.40; /* 👈 image lang ang nagiging transparent */
     z-index: -1;
-}
+    }
+
+    .intro-welcome h1 {
+    font-size: 30px;
+    }
+
+    .intro-welcome h4 {
+        font-size: 20px;
+
+    }
+
+    .intro-welcome p {
+        font-size: 14px;
+    }
+
+    .get-started-btn {
+    height: 40px;
+    width: 300px;
+    background-color: #00FFD1;
+    }
 }
