@@ -34,6 +34,15 @@
     z-index: -1;
 }
 
+.welcome-section {
+    height: 100vh;
+    width: min(90%, 1000px);
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .get-started {
     display: flex;

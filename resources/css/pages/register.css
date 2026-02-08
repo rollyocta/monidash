@@ -1,0 +1,162 @@
+/* background design */
+.register-container {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+}
+
+.register-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('/public/images/backgrounds/galaxy.jpg') center/cover no-repeat;
+    opacity: 0.40; /* 👈 image lang ang nagiging transparent */
+    z-index: -1;
+}
+
+.register-section {
+    height: 100vh;
+    width: min(90%, 1000px);
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Shared Base Styles */
+.register-main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 700px; /* Nilakihan para sa 2 columns */
+    margin: auto;
+    padding: 10px;
+}
+
+.deco-bar-top {
+    width: 100%;
+    height: 25px;
+    background-color: #d1d1d1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%, 20% 70%, 0 70%);
+}
+
+.deco-bar-bottom {
+    width: 100%;
+    height: 35px;
+    background-color: #d1d1d1;
+    clip-path: polygon(0 30%, 10% 30%, 15% 0, 85% 0, 90% 30%, 100% 30%, 100% 100%, 0 100%);
+}
+
+.outer-frame {
+    width: 100%;
+    border: 2px solid #3498db;
+    padding: 15px;
+    box-shadow: 0 0 15px #3498db;
+    background: rgba(10, 17, 58, 0.4);
+}
+
+.login-box {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 25px;
+    background-color: #0a113a;
+    width: 100%;
+}
+
+/* GRID SYSTEM PARA SA 2 COLUMNS */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Default: 1 column (mobile) */
+    gap: 15px;
+}
+
+/* Desktop Adjustment */
+@media (min-width: 640px) {
+    .form-grid {
+        grid-template-columns: 1fr 1fr; /* 2 columns sa desktop */
+    }
+    .full-width {
+        grid-column: span 2; /* Para sa button at links */
+    }
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.info-icon {
+    border: 2px solid white;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.title-bar {
+    border: 1px solid white;
+    color: white;
+    flex-grow: 1;
+    padding: 4px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.scifi-input {
+    width: 100%;
+    background: transparent !important;
+    border: 2px solid #3498db !important;
+    border-radius: 25px !important;
+    padding: 10px 15px !important;
+    color: #00ffcc !important;
+    outline: none;
+}
+
+.scifi-input:focus {
+    border-color: #00ffcc !important;
+    box-shadow: 0 0 10px #00ffcc !important;
+}
+
+.register-btn-custom {
+    width: 100%;
+    background: #00ffcc !important;
+    border: none !important;
+    border-radius: 25px !important;
+    padding: 12px !important;
+    font-weight: bold !important;
+    color: #0a113a !important;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.register-btn-custom:hover {
+    box-shadow: 0 0 20px #00ffcc;
+    transform: scale(1.02);
+}
+
+.helper-text {
+    color: #d1d1d1;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.helper-text a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+.error-msg {
+    color: #ff4d4d;
+    font-size: 0.75rem;
+    margin-top: 4px;
+}
