@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 // -----------------------------
+// About Page
+// -----------------------------
+Route::get('/about', function () {
+    return view('pages.about');
+})->name('about');
+
+// -----------------------------
 // Welcome Page (landing page)
 // -----------------------------
 Route::get('/', function () {

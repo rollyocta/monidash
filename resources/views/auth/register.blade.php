@@ -13,8 +13,8 @@
         <div class="deco-bar-top"></div>
 
         <div class="outer-frame">
-            <div class="login-box">
-                <div class="header-row">
+            <div class="register-box">
+                <div class="register-header-row">
                     <div class="info-icon">?</div>
                     <div class="title-bar">{{ __('Create New Account') }}</div>
                 </div>

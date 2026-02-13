@@ -58,16 +58,16 @@
 
 .login-box {
     border: 1px solid rgba(255, 255, 255, 0.6);
-    padding: 30px 20px;
+    padding: 30px 70px;
     background-color: #0a113a;
     width: 100%;
 }
 
-.header-row {
+.login-header-row {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .info-icon {

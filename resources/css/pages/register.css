@@ -57,9 +57,9 @@
     background: rgba(10, 17, 58, 0.4);
 }
 
-.login-box {
+.register-box {
     border: 1px solid rgba(255, 255, 255, 0.6);
-    padding: 25px;
+    padding: 25px 50px;
     background-color: #0a113a;
     width: 100%;
 }
@@ -81,11 +81,11 @@
     }
 }
 
-.header-row {
+.register-header-row {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .info-icon {

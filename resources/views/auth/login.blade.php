@@ -13,7 +13,7 @@
 
         <div class="outer-frame">
             <div class="login-box">
-                <div class="header-row">
+                <div class="login-header-row">
                     <div class="info-icon">!</div>
                     <div class="title-bar">{{ __('LOG IN') }}</div>
                 </div>

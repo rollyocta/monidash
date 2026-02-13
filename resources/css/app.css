@@ -4,6 +4,7 @@
 @import './pages/welcome.css';
 @import './pages/login.css';
 @import './pages/register.css';
+@import './pages/dashboard.css';
 
 /* Tailwind base */
 @tailwind base;
