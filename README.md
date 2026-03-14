@@ -1,7 +1,8 @@
 ## MoniDash – Gamified Personal Finance Dashboard
 MoniDash is a gamified personal finance web application designed to help users track income, manage expenses, and visualize spending patterns while staying motivated through game-like elements. By integrating rewards, progress tracking, and engaging visuals, the app encourages users to consistently monitor their finances and build better financial habits.
 
-Features
+
+## Features
 
 • Add, edit, and delete income and expense entries
 
@@ -21,7 +22,8 @@ Features
 
 • Clean and intuitive UI for easy navigation
 
-Technologies Used
+
+## Technologies Used
 
 • Frontend: Vite, Tailwind CSS
 
