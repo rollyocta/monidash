@@ -22,6 +22,9 @@ Features
 • Clean and intuitive UI for easy navigation
 
 Technologies Used
+
 • Frontend: Vite, Tailwind CSS
+
 • Backend / Database: MySQL
+
 • Other Tools: Git for version control
